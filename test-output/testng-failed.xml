@@ -3,20 +3,57 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.LoginTest">
+      <class name="testcases.ProductTest">
         <methods>
-          <include name="collectionLogout"/>
-          <include name="emptyLogin"/>
-          <include name="forgotPassword"/>
-          <include name="homeLogout"/>
-          <include name="invalidCredentials"/>
-          <include name="objinit"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="validCred"/>
-          <include name="unregisteredUser"/>
+          <include name="objinit"/>
+          <include name="cartBadge"/>
+        </methods>
+      </class> <!-- testcases.ProductTest -->
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="forgotPassword"/>
+          <include name="homeLogout"/>
+          <include name="tearDown"/>
+          <include name="objinit"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- testcases.LoginTest -->
+      <class name="testcases.ContactTest">
+        <methods>
+          <include name="checkExploreJobs"/>
+          <include name="objectint"/>
+          <include name="tearDown"/>
+          <include name="checkSubscribe"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.ContactTest -->
+      <class name="testcases.OrderTest">
+        <methods>
+          <include name="beforeDeliveryInfo"/>
+          <include name="tearDown"/>
+          <include name="beforeCheckout"/>
+          <include name="setUp"/>
+          <include name="checkTrackorder"/>
+        </methods>
+      </class> <!-- testcases.OrderTest -->
+      <class name="testcases.WorkflowTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="objectint"/>
+          <include name="setUp"/>
+          <include name="addingToCart"/>
+        </methods>
+      </class> <!-- testcases.WorkflowTest -->
+      <class name="testcases.RegisterTest">
+        <methods>
+          <include name="objectint"/>
+          <include name="invalidReg"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.RegisterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
